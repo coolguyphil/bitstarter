@@ -6,7 +6,7 @@ var htmlfile = "index.html";
 
 app.get('/', function(request, response) {
   //response.send('Hello World 2!');
-  var contents = fs.readFileSync((htmlfile).toString();
+  var contents = fs.readFileSync(htmlfile).toString();
   response.send(contents);	
 });
 
