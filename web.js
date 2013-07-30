@@ -2,10 +2,10 @@ var express = require('express');
 var app = express();
 //app.use(express.logger());
 var fs = require('fs');
-var htmlfile = "index.html";
 
 app.get('/', function(request, response) {
   //response.send('Hello World 2!');
+  var htmlfile = "index.html";
   var contents = fs.readFileSync(htmlfile).toString();
   response.send(contents);	
 });
